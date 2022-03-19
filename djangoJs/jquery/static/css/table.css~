@@ -1,0 +1,49 @@
+.highlight{
+    border: 1.5px solid lightyellow;
+    background-color: yellow;
+}
+
+.alt{
+    background-color:black;
+    color:white;
+}
+
+#content{
+    background:magenta;
+}
+
+.clear{
+    opacity:0.5;
+    border:5px red;
+    padding:20px;
+}
+
+.switcher{
+    border:11px red;
+    max-width:30%;
+    height:auto;
+    padding:10px;
+    position:absolute;
+    top:100px;
+    left:70%;
+    transform:translate(-5%,-50%)
+}
+
+.default {
+    font-size: 1.5em;
+}
+.narrow {
+    font-size: .5em;
+}
+.large {
+    font-size: 2.5em;
+}
+
+.selected{
+    border:2px dotted green;
+    background:lightblue;;
+}
+
+.hidden {
+    display: none;
+}

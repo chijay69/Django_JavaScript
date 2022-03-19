@@ -1,0 +1,11 @@
+from django.urls import path, include
+from . import views
+
+
+# urls goes here
+
+app_name= "jquery"
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]

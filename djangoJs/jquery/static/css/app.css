@@ -1,0 +1,40 @@
+.navbar{}
+
+.navbar-default{}
+
+.navbar-static-top{}
+
+.container{}
+
+.p-none{}
+
+.navbar-header{}
+
+.icon-bar{}
+
+.navbar-brand{}
+
+.collapse{}
+
+.navbar-collapse{}
+
+.nav{}
+
+.navbar-right{}
+
+.p-r-none{}
+
+.footer{}
+
+#site-wrapper{}
+
+.message{
+    border: 1.5px solid grey;
+    background-color: darkgrey;
+    font-family: courier;
+    font-size: 2em;
+    padding:5px 10px;
+    margin:auto;
+    color: #913;
+}
+
