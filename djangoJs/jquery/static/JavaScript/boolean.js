@@ -2,10 +2,8 @@ document.write("guys");
 //javascript
 var msg = '';
 var i = 1;
-while(i < 10){
+while(i < 5){
     msg += i + ' x 5  = ' + (i*5) + '</br>';
-    i++;
-    msg += i + ' x 5 = ' + (i * 5) + '<br />';
     i++;
 }
 document.getElementById('stock').innerHTML = msg;
@@ -58,19 +56,44 @@ $(document).ready(function() {
     };
 
     $('#switcher').on('click.collapse', toggleSwitcher);
+    //simulate a click to start in collapsed state
+    $('#switcher').click();
 
-    $('#switcher-narrow, #switcher-large').click(function() {
+    //setBodyClass func changes page style
+    var setBodyClass = function(clsname) {
+	$('body').removeClass().addClass(clsname);
+	$('#switcher button').removeClass('selected');
+	$('#switcher-' + clsname).addClass('selected');
+	$('#switcher').off('click', toggleSwitcher);
+	if (clsname == 'default') {
+	    $('#switcher').on('click', toggleSwitcher);   
+	}
+    };
+    // Begin with switcher-default button selected
+    $('#switcher-default').addClass('selected');
 
-	$('#switcher').off('click.collapse');
-
+    var triggers= {
+	D:"default",
+	N:"narrow",
+	L:"large"
+    };
+    // call setBodyClass() when key is pressed
+    $(document).keyup(function(event){
+	var key = String.fromCharCode(event.keyCode);
+	if (key in triggers) {
+	    $('#switcher-' + triggers[key]).click()
+	}
     });
 
-    $('#switcher-default').click(function() {
-
-	$('#switcher').on('click.collapse', toggleSwitcher);
-
+    //trying to use the setBodyClass
+    $('#switcher button').click(function(event){
+	var clsname = this.id.split('-')[1];
+	setBodyClass(clsname);
+    });
+    
 });
-
+    
+/*
 $(document).ready(function() {
     $('#switcher-default').addClass('selected');
     $('#switcher button').click(function(event) {
@@ -81,4 +104,6 @@ $(document).ready(function() {
 	event.stopPropagation();
     });
 });
+
+*/
 
