@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      a {
+	  color:#f1f1f1;:
+      }
+      body {
+	  background-color:#444;
+	  padding:2%;
+	  color:#f1f1f1;
+      }
+      body .section{
+	  background-color:#111;
+	  
+      }
+      header{
+	  
+	  padding:2%;
+      }
+      main {
+	  
+	  padding:2%;
+      }
+      aside {
+	  
+	  padding:2%;
+      }
+      section .message_box {
+	 
+	  padding:2%;
+      }
+      .message {
+	  
+      }
+      .footer{
+	  
+	  padding:2%;
+      }
+      .logo {
+	  
+	  display: table;
+	  margin: 0 auto;
+      }
+      .logo_container {
+	 
+	  max-width:100%;
+      }
+      .comment {
+	  margin-top:55px;
+	  margin-bottom:5px;
+	  margin-right:5px;
+	  margin-left:5px;
+      }
+      .footer1{
+	  
+	  padding:2%;
+      }
+      .footer2{
+	 
+	  padding:2%;
+      }
+      .footer3{
+	  
+	  padding:2%;
+	  background:#191970;
+      }
+      .logo img{
+	  padding-top:10px;
+	  padding-bottom:0px;
+	  height:auto;
+	  width:144px;
+      }
+      .site{
+	  text-align:center;
+      }
+      .contact{
+	  background-color:transparent;
+	  padding-top:1em;
+	  padding-bottom:0em;
+      }
+      .header{
+	  background-color:#191970;
+	  
+      }
+      .btn{
+	  background-color:#191970;
+      }
+      .greetings_container{
+	  
+	  width:100%;
+	  padding:2%;
+      }
+      .image_box{
+	  background:url("") no-repeat fixed center;
+	  position:relative;
+      }
+      .footer_image{
+	  display:block;
+	  width:100%;
+	  height:144px;
+      }
+      .text_box{
+	  top:10%;
+	  bottom:10%;
+	  height:auto;
+	  left:10%;
+	  margin:auto;
+	  width:80%;
+	  position:absolute;
+	  opacity:1;
+	  z-index:1;
+      }
+      p{
+	  font-family:Copperplate, Papyrus, fantasy, serif;
+      }
+      .container-fluid{
+	  padding:0px;
+	  
+	  margin:0px;
+	  width:100%;
+	 
+      }
+      .row.dear {
+	  margin:2%;
+	  padding:20px 0px 0px 0px;
+	  left:0%;
+	  width:60%;
+      }
+      .row.greetings{
+	  width:50%;
+	  margin:0 auto;
+	  padding-left:20px;
+	  border-bottom:3px solid #191970;
+      }
+      .text_box>p{
+	  color:black;
+	  font-size:1em;
+      }
+    </style>
+
+    <title>RSM</title>
+  </head>
+  <body>
+    <section class="section">
+      <header class="header">
+	<div class="contact">
+	  <p class="site"><a href="https://www.randstadusa.com/">Visit Site</a></p>
+	</div>
+      </header>
+      <main>
+	<article class="logo_container">
+	  <div class="logo">
+	    <img src="{{ STATIC_URL }}Images/RandStad.png" alt="company logo"/>
+	  </div><br><br>
+	</article>
+	<div class="container-fluid">
+	  <div class="row greetings">
+	    <p><i id="name">Julia</i>, congratulations, we are offering you a position</p>
+	  </div>
+	</div>
+	<div class="container-fluid">
+	  <div class="row dear">
+	    <p>Dear, <i id="name"> Julia Cook</i></p>
+	  </div>
+	</div>
+	<section class="message_box">
+	  <article class="message">
+	    <p>As discussed, we are happy to officially offer you the position of a CUSTOMER CARE SERVICE REPRESENTATIVE as of (02/14/2022).</p>
+	    <p>Attached, you'll find your updated contract that contains your new employment terms along with your compensation package and benefits. Please review the letter sign and send back signed via email. Feel free to reach out to us, should you have any questions.</p>
+	    <p>We'll appreciate your hard work and commitment to the (randstandg) online team for the years to come. We're all looking forward to seeing you achieve great things in your new role.</p>
+	  </article>
+	</section>
+      </main>
+      <footer class="footer">
+	<article class="footer1">
+	  <div class="image_box">
+	    <img class="footer_image" src="{{ STATIC_URL }}Images/RSM_Banner.png" alt="banner image"/>
+	    <div class="text_container">
+	      <div class="text_box text-center">
+		<p style="text-align:center;"><em>Reach out to our agency today to see how we can help you achieve your goals.</em></p>
+		<button type="button" class="btn btn-primary btn-sm"><a href="https://www.randstadusa.com/">Get Started</a></button>
+	      </div>
+	    </div>
+	  </div>
+	</article>
+	<article class="footer2">
+	  <div class="logo_container">
+	    <div class="logo">
+	      <img src="{{ STATIC_URL }}Images/Randstad.jpg" alt="company logo"/>
+	    </div>
+	    <br><br>
+	  </div>
+	  <p style="text-align:center; margin:2%; padding:5px;">randstad human resources unit</p>
+	  <div class="comment">
+	    <p style="text-align:center;">You have received this email because you are being considered for a job at randstad. If you feel this message was sent to the wrong person please ignore</p>
+	  </div>
+	</article>
+	<div class="footer3">
+	  <p style="text-align:center; margin:2%; padding:5px;"><a href="https://rsmlogistics.org/">&COPY; randstand</a></p>
+	</div>
+      </footer>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script>
+      $(document).ready(function(){
+	  $()
+      });
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
